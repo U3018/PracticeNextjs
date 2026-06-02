@@ -41,7 +41,7 @@
     ".next/types/**/*.ts",
     "next.config.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "src/app/button"  ],
   "exclude": [
     "node_modules"
   ]
