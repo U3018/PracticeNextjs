@@ -10,7 +10,8 @@ export default function Mypage() {
       <div className="max-w-2xl text-left px-6 py-14">
         <p>Welcome to the Home Page</p>
         <p>This is a simple home pagecomponent.</p>
-        <Link href="/button" className="text-blue-500 hover:underline">
+        <Link href="/button" className="text-blue-500 hover:underline border px-4 py-2 rounded-md bg-green-500"
+        style={{ marginTop: '20px', display: 'inline-block'}}>
           Go to Button Page
         </Link>
       </div>
