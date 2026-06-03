@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Table from "@/components/table";
 
 export default function ButtonPage() {
   const [count, setCount] = useState(0);
@@ -14,26 +15,12 @@ export default function ButtonPage() {
         <p className="mb-2">Welcome to the Button Page</p>
         <p className="mb-8">This is a simple button page component.</p>
 
-        {/* Table */}
-        <div className="overflow-x-auto mb-10">
-          <table className="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
-            <tbody>
-              <tr className="bg-gray-50">
-                <td className="border px-4 py-3">Row 1, Cell 1</td>
-                <td className="border px-4 py-3">Row 1, Cell 2</td>
-              </tr>
-              <tr>
-                <td className="border px-4 py-3">Row 2, Cell 1</td>
-                <td className="border px-4 py-3">Row 2, Cell 2</td>
-              </tr>
-            </tbody>
-          </table>
+        <div>
+          <p className="mb-2">about table</p>
+          <Table />
         </div>
 
-        {/* Counter */}
-        <h2 className="text-2xl font-semibold mb-4">
-          Current Count: {count}
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">Current Count: {count}</h2>
 
         <div className="flex gap-4 mb-8">
           <button
@@ -51,10 +38,7 @@ export default function ButtonPage() {
           </button>
         </div>
 
-        <Link
-          href="/"
-          className="text-blue-500 hover:text-blue-700 hover:underline"
-        >
+        <Link href="/" className="text-blue-500 hover:text-blue-700 hover:underline">
           Go back to Home
         </Link>
       </div>
