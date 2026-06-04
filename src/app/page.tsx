@@ -15,6 +15,13 @@ export default function Mypage() {
         >
           Go to Button Page
         </Link>
+        <Link
+          href="/todo"
+          className="text-blue-500 hover:underline border px-4 py-2 rounded-md bg-yellow-500"
+          style={{ marginTop: "20px", display: "inline-block" }}
+        >
+          Go to Todo Page
+        </Link>
       </div>
     </main>
   );
