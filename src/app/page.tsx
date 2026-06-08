@@ -22,6 +22,13 @@ export default function Mypage() {
         >
           Go to Todo Page
         </Link>
+        <Link
+          href="/train"
+          className="text-blue-500 hover:underline border px-4 py-2 rounded-md bg-red-500"
+          style={{ marginTop: "20px", display: "inline-block" }}
+        >
+          Go to Train Page
+        </Link>
       </div>
     </main>
   );
